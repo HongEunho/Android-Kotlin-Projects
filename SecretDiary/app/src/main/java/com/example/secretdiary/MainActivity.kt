@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            val passwordPreferences = getSharedPreferences("password", Context.MODE_PRIVATE) // 해당 앱에서만 사용할 것이기 때문에 PRIVATE
+            val passwordPreferences = getSharedPreferences("password", MODE_PRIVATE) // 해당 앱에서만 사용할 것이기 때문에 PRIVATE
             val passwordFromUser = "${numberPicker1.value}${numberPicker2.value}${numberPicker3.value}"
 
             if(passwordPreferences.getString("password", "000").equals(passwordFromUser)){
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         changePasswordButton.setOnClickListener {
-            val passwordPreferences = getSharedPreferences("password", Context.MODE_PRIVATE) // 해당 앱에서만 사용할 것이기 때문에 PRIVATE
+            val passwordPreferences = getSharedPreferences("password", MODE_PRIVATE) // 해당 앱에서만 사용할 것이기 때문에 PRIVATE
             val passwordFromUser = "${numberPicker1.value}${numberPicker2.value}${numberPicker3.value}"
             if(changePasswordMode){
                 /*passwordPreferences.edit(true){
