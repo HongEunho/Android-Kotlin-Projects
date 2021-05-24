@@ -23,6 +23,5 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun clearButtonClicked(v: View){
-
     }
 }
