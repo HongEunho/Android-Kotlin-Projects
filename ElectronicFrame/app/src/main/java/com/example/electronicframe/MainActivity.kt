@@ -7,6 +7,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
@@ -145,5 +146,26 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("photoListSize", imageUriList.size)
             startActivity(intent)
         }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("MainActivity", "onPause!!")
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("MainActivity", "onResume!!")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d("MainActivity", "onStart!!")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("MainActivity", "onStop!!")
     }
 }
