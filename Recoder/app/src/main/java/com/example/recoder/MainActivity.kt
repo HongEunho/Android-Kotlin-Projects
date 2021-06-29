@@ -5,6 +5,7 @@ import android.media.MediaPlayer
 import android.media.MediaRecorder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import java.util.jar.Manifest
 
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         requestAudioPermission()
         initViews()
         bindViews()
+        initVariables()
     }
 
     override fun onRequestPermissionsResult(
@@ -70,6 +72,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun initViews() {
         recordButton.updateIconWithState(state)
+    }
+
+    private fun initVariables() {
+        state = State.BEFORE_RECORDING
     }
 
     private fun bindViews() {
