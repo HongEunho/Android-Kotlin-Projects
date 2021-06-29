@@ -51,6 +51,7 @@ class PhotoFrameActivity: AppCompatActivity() {
                 val current = currentPosition
                 val next = if (photoList.size <= currentPosition + 1) 0 else currentPosition + 1
 
+                if (photoList.size == 0) return@runOnUiThread
                 backgroundImageView.setImageURI(photoList[current])
 
                 photoImageView.alpha = 0F // alpha값이 0이면 안보임, 1이면 보임
