@@ -7,7 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b41eeb8-bcc6-4f70-ba67-dfbfa58f6651" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Recoder/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Recoder/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/AlarmApp.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/AlarmApp.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alarmapp/AlarmDisplayModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/alarmapp/AlarmDisplayModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alarmapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/alarmapp/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TodaysSaying/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TodaysSaying/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +30,18 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,9 +61,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_29" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-07-05T16:55:31.738Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../../.android" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TodaysSaying" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -123,6 +148,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="749" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1625533459995">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="749" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1625533459995" />
     <state x="540" y="274" key="AndroidCreateResourceFileDialog" timestamp="1625497854700">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -131,5 +160,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="803" y="305" key="AndroidCreateXmlResourceDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1625497815810" />
+    <state x="791" y="286" key="FileChooserDialogImpl" timestamp="1625500883135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="791" y="286" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1625500883135" />
   </component>
 </project>
