@@ -1,10 +1,42 @@
 ## BookReview
 
-- RecyclerView
+- RecyclerView ( RecyclerViewAdapter -> ListAdapter + diffUtil )
+
+  adapter.submitList
+
+  
+
 - View Binding
+
+  build.gradle에 viewBinding{enabled = true} 명시해줄 것
+
+  Binding의 이름은 layout파일의 _ 를 제외하면 됨.
+
+  ex) activity_main.xml => ActivityMainBinding / item_book.xml => ItemBookBinding
+
+  RecyclerView 뿐만 아니라 MainActivity도 ViewBinding을 통해 setContentView 함
+
+  ( binding = ActivityMainBinding.inflate(layoutInflater) )
+
+  ( setContentView(binding.root) )
+
+  
+
 - Retrofit
+
+  ```
+  implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+  implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+  ```
+
+  build.gradle에 선언함으로써 retrofit 셋팅을 함
+
+  
+
 - Glide
+
 - Android Room
+
 - Open API
 
 
