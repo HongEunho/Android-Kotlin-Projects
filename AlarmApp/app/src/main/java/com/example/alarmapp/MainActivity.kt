@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
 
         val model = fetchDataFromSharedPreferences()
         renderView(model)
-
         //step2 뷰에 데이터를 그려주기
 
     }
