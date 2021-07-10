@@ -8,7 +8,6 @@ import android.util.Log
 import android.widget.Toast
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.core.view.isGone
-import com.example.githubrepositoryapp.databinding.ActivityMainBinding
 import com.example.githubrepositoryapp.databinding.ActivitySigninBinding
 import com.example.githubrepositoryapp.utility.AuthTokenProvider
 import com.example.githubrepositoryapp.utility.RetrofitUtil
@@ -48,7 +47,10 @@ class SigninActivity : AppCompatActivity(), CoroutineScope {
     }
 
     private fun launchMainActivity() {
-
+        startActivity(Intent(this, MainActivity::class.java).apply{
+            addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        })
     }
 
     private fun checkAuthCodeExist() : Boolean{
@@ -60,7 +62,7 @@ class SigninActivity : AppCompatActivity(), CoroutineScope {
             .appendPath("login")
             .appendPath("oauth")
             .appendPath("authorize")
-            .appendQueryParameter("cliend_id", BuildConfig.GITHUB_CLIEND_ID)
+            .appendQueryParameter("client_id", BuildConfig.GITHUB_CLIENT_ID)
             .build()
 
         CustomTabsIntent.Builder().build().also{
@@ -68,14 +70,13 @@ class SigninActivity : AppCompatActivity(), CoroutineScope {
         }
     }
 
-    override fun onNewIntent(intent: Intent?) {
+    override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
-
-        intent?.data?.getQueryParameter("code")?.let{
+        intent.data?.getQueryParameter("code")?.let{ code->
             // todo getAccessToken
             launch(coroutineContext) {
                 showProgress()
-                val getAccessTokenJob = getAccessToken(it)
+                getAccessToken(code)
                 dismissProgress()
             }
         }
@@ -99,7 +100,7 @@ class SigninActivity : AppCompatActivity(), CoroutineScope {
 
     private suspend fun getAccessToken(code: String) = withContext(Dispatchers.IO){
         val response = RetrofitUtil.authApiService.getAccessToken(
-            clientId = BuildConfig.GITHUB_CLIEND_ID,
+            clientId = BuildConfig.GITHUB_CLIENT_ID,
             clientSecret = BuildConfig.GITHUB_CLIENT_SECRET,
             code = code
         )
