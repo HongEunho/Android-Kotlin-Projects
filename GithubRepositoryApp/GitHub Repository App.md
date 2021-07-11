@@ -118,3 +118,9 @@ implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9"
 
 위의  코드를 build.gradle에 선언하여 셋팅을 함
 
+
+
+### Provider를 만드는 습관
+
+
+
