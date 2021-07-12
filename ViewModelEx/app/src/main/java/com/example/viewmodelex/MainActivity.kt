@@ -13,15 +13,10 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var viewModel: MainViewModel
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
-        viewModel = ViewModelProvider(
-            this,
-            MainViewModelFactory(savedInstanceState?.getLong(KEY_COUNT) ?: 0)
-        )[MainViewModel::class.java]
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
 
         setContentView(binding.root)
         initViews()
@@ -33,15 +28,6 @@ class MainActivity : AppCompatActivity() {
             viewModel.increaseCount()
         }
 
-    }
-
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        outState.putLong(KEY_COUNT, viewModel.count.value ?: 0)
-    }
-
-    companion object{
-        private const val KEY_COUNT = "count"
     }
 
 }
