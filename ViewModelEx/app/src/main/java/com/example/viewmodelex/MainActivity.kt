@@ -11,17 +11,21 @@ import com.example.viewmodelex.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
-    private val viewModel: MainViewModel by lazy {
-        ViewModelProvider(this)[MainViewModel::class.java]
-    }
+    private lateinit var viewModel: MainViewModel
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        viewModel = ViewModelProvider(
+            this,
+            MainViewModelFactory(savedInstanceState?.getLong(KEY_COUNT) ?: 0)
+        )[MainViewModel::class.java]
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
         initViews()
-        showDialogAfter3seconds()
+
     }
 
     private fun initViews() {
@@ -29,21 +33,15 @@ class MainActivity : AppCompatActivity() {
             viewModel.increaseCount()
         }
 
-        viewModel.count.observe(this) {
-            binding.countText.text = it.toString()
-        }
-
-        viewModel.showDialog.observe(this) {
-            if (it) {
-                showDialogAfter3seconds()
-            }
-        }
     }
 
-    private fun showDialogAfter3seconds() {
-        AlertDialog.Builder(this)
-            .setMessage("3 seconds passed")
-            .show()
-
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putLong(KEY_COUNT, viewModel.count.value ?: 0)
     }
+
+    companion object{
+        private const val KEY_COUNT = "count"
+    }
+
 }
