@@ -95,4 +95,4 @@ View와 Model은 분리가 되었지만, 앱의 크기가 거대해지면서 Mod
 
 
 
-이어서..[MVVM](https://oss.navercorp.com/ghdwns315/AndroidGoogleCalendar/blob/master/StudyLog/%5BDAY06%5D%20MVVM패턴.md)
+이어서..[MVVM](https://github.com/HongEunho/Android-Kotlin-Projects/blob/main/StudyLog/%5BDAY06%5D%20MVVM%ED%8C%A8%ED%84%B4.md)
