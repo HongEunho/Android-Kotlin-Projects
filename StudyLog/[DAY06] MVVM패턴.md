@@ -2,7 +2,7 @@
 
 ## MVVM 패턴
 
-<img width="539" alt="KakaoTalk_Photo_2021-07-12-23-37-32" src="https://media.oss.navercorp.com/user/25503/files/0502af80-e36b-11eb-8a4a-39a2a4468e5f">
+<img width="539" alt="KakaoTalk_Photo_2021-07-12-23-37-32" src="https://user-images.githubusercontent.com/46186664/125787761-43132edf-fc6b-4a1f-b072-9d7759aba61e.png">
 
 MVVM패턴은 MVP 패턴의 Presenter의 역할을 ViewModel이 대신하게 된다.
 
