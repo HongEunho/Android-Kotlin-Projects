@@ -30,13 +30,12 @@ MVC패턴과 MVP패턴의 차이점을 먼저 그림으로 보고, 정리해보�
 
 안드로이드 MVC 패턴
 
-<img width="539" alt="KakaoTalk_Photo_2021-07-12-23-37-32" src="https://media.oss.navercorp.com/user/25503/files/4e063400-e36a-11eb-88ed-6d861c6da1af">
-
+<img width="539" alt="android-mvc" src="https://user-images.githubusercontent.com/46186664/125787866-cc11a212-e064-49d0-974e-9cb87bee7069.png">
 </br>
 
 MVP패턴
 
-<img width="539" alt="KakaoTalk_Photo_2021-07-12-23-37-32" src="https://media.oss.navercorp.com/user/25503/files/d84e9800-e36a-11eb-80bc-02d029deb8f7">
+<img width="539" alt="KakaoTalk_Photo_2021-07-12-23-37-32" src="https://user-images.githubusercontent.com/46186664/125787935-ff9b1f3a-be48-4fc3-ada9-53bf847c5953.png">
 
 MVC패턴에서는 Model과 Activity( View + Controller )로 구성이 되어있고
 
@@ -96,4 +95,4 @@ View와 Model은 분리가 되었지만, 앱의 크기가 거대해지면서 Mod
 
 
 
-이어서..[MVVM](https://oss.navercorp.com/ghdwns315/AndroidGoogleCalendar/blob/master/StudyLog/%5BDAY06%5D%20MVVM패턴.md)
+이어서..[MVVM](https://github.com/HongEunho/Android-Kotlin-Projects/blob/main/StudyLog/%5BDAY06%5D%20MVVM%ED%8C%A8%ED%84%B4.md)
