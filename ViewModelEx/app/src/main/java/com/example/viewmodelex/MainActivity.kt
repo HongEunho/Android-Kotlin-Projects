@@ -19,14 +19,6 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
 
         setContentView(binding.root)
-        initViews()
-
-    }
-
-    private fun initViews() {
-        binding.increaseButton.setOnClickListener {
-            viewModel.increaseCount()
-        }
 
     }
 
