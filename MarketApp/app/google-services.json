@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "572442441292",
+    "firebase_url": "https://tinderdemo-6ef8c-default-rtdb.firebaseio.com",
+    "project_id": "tinderdemo-6ef8c",
+    "storage_bucket": "tinderdemo-6ef8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572442441292:android:b454dd1c227e92a84966e9",
+        "android_client_info": {
+          "package_name": "com.example.marketapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572442441292-ef2kcvqvt4terof3v2e2tb2o2d95tj7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASfie6-nIXNvc-OzOWU1erKbJajwaB1vw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572442441292-ef2kcvqvt4terof3v2e2tb2o2d95tj7a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572442441292:android:9cfd72e47d03de604966e9",
+        "android_client_info": {
+          "package_name": "com.example.tinderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572442441292-ef2kcvqvt4terof3v2e2tb2o2d95tj7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASfie6-nIXNvc-OzOWU1erKbJajwaB1vw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572442441292-ef2kcvqvt4terof3v2e2tb2o2d95tj7a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
