@@ -3,13 +3,12 @@ package com.example.marketapp.home
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.marketapp.DBKey.Companion.DB_ARTICLES
 import com.example.marketapp.R
 import com.example.marketapp.databinding.FragmentHomeBinding
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.ChildEventListener
@@ -63,7 +62,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         binding.articleRecyclerView.adapter = articleAdapter
 
         binding.addFloatingButton.setOnClickListener {
-            startActivity(Intent(requireContext(), ArticleAddActivity::class.java))
+            if(auth.currentUser != null) {
+                startActivity(Intent(requireContext(), AddArticleActivity::class.java))
+            } else {
+                startActivity(Intent(requireContext(), AddArticleActivity::class.java))
+                Snackbar.make(view, "로그인 후 사용해주세요", Snackbar.LENGTH_LONG).show()
+            }
         }
 
         articleDB.addChildEventListener(listener)
