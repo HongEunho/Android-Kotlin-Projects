@@ -65,13 +65,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             if(auth.currentUser != null) {
                 startActivity(Intent(requireContext(), AddArticleActivity::class.java))
             } else {
-                startActivity(Intent(requireContext(), AddArticleActivity::class.java))
                 Snackbar.make(view, "로그인 후 사용해주세요", Snackbar.LENGTH_LONG).show()
             }
         }
 
         articleDB.addChildEventListener(listener)
-
     }
 
     override fun onResume() {
