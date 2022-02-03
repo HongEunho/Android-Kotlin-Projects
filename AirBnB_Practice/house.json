@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "id" : 1,
+            "title" : "강남역!! 최저가!! 레지던스!!",
+            "price" : "23,000원",
+            "lat" : 37.50008568355368,
+            "lng" : 127.026001333329501,
+            "imgUrl" : "https://i.picsum.photos/id/846/200/200.jpg?hmac=sBOPnyp2w5gN9cwTnXUuQ528aG4bLJ2qf_d-3y-LjSo"
+        },
+        {
+            "id" : 2,
+            "title" : "강남역!! 위치 초근접!!",
+            "price" : "28,000원",
+            "lat" : 37.49794464575748, 
+            "lng" : 127.02835203208461,
+            "imgUrl" : "https://i.picsum.photos/id/728/200/200.jpg?hmac=ewJNfbVjP_8FUokKp00XS9m2FOzyZbpNE5rG97r7cdw"
+        },
+        {
+            "id" : 3,
+            "title" : "강남역에서 초근접 최저가",
+            "price" : "20,000원",
+            "lat" : 37.497025344957564, 
+            "lng" : 127.02936054259324,
+            "imgUrl" : "https://i.picsum.photos/id/728/200/200.jpg?hmac=ewJNfbVjP_8FUokKp00XS9m2FOzyZbpNE5rG97r7cdw"
+        },
+        {
+            "id" : 4,
+            "title" : "강남역 역대급 가성비!!",
+            "price" : "30,000원",
+            "lat" : 37.49752755698225, 
+            "lng" : 127.02870608364613,
+            "imgUrl" : "https://i.picsum.photos/id/728/200/200.jpg?hmac=ewJNfbVjP_8FUokKp00XS9m2FOzyZbpNE5rG97r7cdw"
+        },
+        {
+            "id" : 5,
+            "title" : "강남역 최고 인기!!",
+            "price" : "35,000원",
+            "lat" : 37.49850643511953, 127.02800870935825
+            "lng" : 127.02870608364613,
+            "imgUrl" : "https://i.picsum.photos/id/728/200/200.jpg?hmac=ewJNfbVjP_8FUokKp00XS9m2FOzyZbpNE5rG97r7cdw"
+        }
+    ]
+}
