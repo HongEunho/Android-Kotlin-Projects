@@ -83,7 +83,7 @@ class PlayerFragment: Fragment(R.layout.fragment_player) {
 
     private fun initRecyclerView(fragmentPlayerBinding: FragmentPlayerBinding) {
         playListAdapter = PlayListAdapter {
-
+            playMusic(it)
         }
 
         fragmentPlayerBinding.playListRecyclerView.apply {
@@ -143,8 +143,13 @@ class PlayerFragment: Fragment(R.layout.fragment_player) {
             })
 
             player?.prepare()
-            player?.play()
         }
+    }
+
+    private fun playMusic(musicModel: MusicModel) {
+        model.updateCurrentPosition(musicModel)
+        player?.seekTo(model.currentPosition, 0)
+        player?.play()
     }
 
     companion object {
